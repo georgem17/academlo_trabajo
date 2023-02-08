@@ -1,0 +1,230 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  /* background-color: #e9ca65; */
+  background-color: #020403;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar-header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+.navbar-menu-mobile {
+  color: #adadad;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-decoration: none;
+}
+.navbar-container {
+  position: absolute;
+  background: #020403;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.4s ease; 
+  margin: 0px;
+  padding: 0px;
+}
+nav .navbar-container .navbar-item{
+  padding: 10px 0px;
+}
+.navbar-link {
+  font-size: 1.5rem; 
+}
+#navbar-header:target .navbar-container {
+  height: 300px; 
+}
+#navbar-header:target .open {
+  display: none; 
+}
+#navbar-header:target .close {
+  display: flex; 
+}
+.close {
+  display: none; 
+}
+.navbar-container li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.navbar-container li{
+  list-style: none;
+}
+
+@media (min-width: 950px) {
+  .navbar-menu-mobile {
+    display: none; 
+  }
+  nav .navbar-container {
+    height: auto;
+    flex-direction: row;
+    position: static;
+    justify-content: center;
+  } 
+  nav .navbar-container li a {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 20px;
+  }
+  .habil .caja_habi .habi_uno{
+    display: flex;
+    justify-content: center;
+  }
+  .cuerpo .habil .caja_habi .habi_uno div {
+    margin: 20px 80px;  
+  }
+  
+  .habil .caja_habi .habi_dos{
+  display: flex;
+  justify-content: center;
+  }
+  .cuerpo .habil .caja_habi .habi_dos div {
+    margin: 20px 80px;
+  }
+  .cuerpo .experience .bloque{
+  margin: 25px 100px;
+  }
+  .cuerpo .experience .bloque h3{
+    margin: 0px 100px 0px 200px; 
+  }
+  .cuerpo .porta{
+    justify-content: center;
+    text-align: center;
+  }
+  .cuerpo .porta .porta_section{
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-between; */
+  }
+    .cuerpo .porta .porta_section div{
+      justify-content: center;
+      margin: 25px 20px;
+    }
+}
+
+
+/* 🦴cuerpo🦴 */
+
+.cuerpo .me img{
+  width: auto;
+  margin: 50px 20px 20px 20px;
+}
+
+.cuerpo div{
+  text-align: center;
+}
+.cuerpo h1{
+  color: #ffffff;
+  font-size: 50px;
+}
+body h2{
+  color: #ffffff;
+  font-size: 35px;
+  margin: 10px;
+}
+.cuerpo .redes{
+  display: flex;
+  justify-content: center;
+  margin: 20px 25px 80px 25px;
+}
+.cuerpo .redes img{
+  padding: 20px;
+}
+.cuerpo .descrip p{
+  text-align: center;
+  margin: 25px 50px 50px 50px;
+  color: #adadad;
+}
+.cuerpo .habil .caja_habi{
+  color: #ffffff;
+}
+.cuerpo .habil .caja_habi{
+  justify-content: center;
+  margin: 35px;
+}
+.cuerpo .habil .caja_habi img{
+  background-color: #212121;
+  border-radius: 75px;
+  padding: 20px;
+}
+.cuerpo .habil .caja_habi .habi_uno :first-of-type img {
+  width: 75px;
+  border-radius: 200px;
+}
+
+.cuerpo .habil .caja_habi div{
+    margin: 25px 25px 50px 25px;
+}
+
+.experience h2{
+  color: #ffffff;
+  font-size: 35px;
+  margin: 90px 20px 20px 20px;
+}
+
+.experience h3{
+  color: #ffffff;
+}
+.experience h4{
+  color: #adadad;
+}
+.experience .bloque{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin: 25px 20px;
+  border-bottom: solid 1px #adadad;
+  padding: 10px;
+}
+
+.cuerpo .porta h2{
+  color: #ffffff;
+  text-align: start;
+  margin: 90px 20px 20px 20px;
+  font-size: 35px;
+}
+.cuerpo .porta div {
+  margin: 20px 0px;
+}
+
+/* 🦴pie de pagina🦴 */
+
+.contac{
+  display: flex;
+  justify-content: center;
+}
+.contac div{
+  margin: 20px 10px;
+  text-align: center;
+}
+footer h2{
+  color: #ffffff;
+  margin: 80px 20px 20px 20px;
+}
+.contac div h4{
+  color: #adadad;
+}
+.contac img{
+  border: solid #adadad;
+  padding: 10px;
+  border-radius: 50%;
+}
+footer h5{
+  text-align: center;
+  color: #adadad;
+  font-size: 20px;
+  margin: 50px 20px;
+}
